@@ -4,7 +4,7 @@ import media
 tarnation = media.Movie("Tarnation", "Documentery about a person's experience"
                         " growing up with a mentally unstable mother in Texas",
                         "https://upload.wikimedia.org/wikipedia/en/9/9b/TarnationPOSTER11.jpg",
-                        "https://www.youtube.com/embed/mLDQL23nutw",
+                        "https://www.youtube.com/watch?v=mLDQL23nutw",
                         "The music is the best part of this.")
 
 short_term_12 = media.Movie("Short Term 12", "A look at the lives of foster kids "
@@ -37,14 +37,15 @@ the_lady_eve = media.Movie("The Lady Eve", "Screwball comedy in which a con-woma
 boyhood = media.Movie("Boyhood","A look at the same boy and family, filled over 12 years",
                       "http://ecx.images-amazon.com/images/I/A1Dos9L1WHL._SL1500_.jpg",
                       "https://www.youtube.com/watch?v=Ys-mbHXyWX4",
-                      "The closest thing to my childhood on film, thanks to  central Texas location,
-                      "including my old high school")
+                      "The closest thing to my childhood on film, thanks to "
+                      " central Texas location, "
+                      " including my old high school")
  
 #tarnation.show_trailer()
 movies = [tarnation, short_term_12, tiny_furniture, fargo, logans_run, the_lady_eve, boyhood]
 
-#fresh_tomatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(movies)
 #print(media.Movie.VALID_RATINGS)
 #print(media.Movie.__doc__)
 #print(media.Movie.__name__)
-print(media.Movie.__module__)
+#print(media.Movie.__module__)
