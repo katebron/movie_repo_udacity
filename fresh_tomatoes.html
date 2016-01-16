@@ -31,11 +31,30 @@
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            position: relative;
         }
+        /*comment hiddent until hover*/
+        .comment{
+            display: none;
+            background-color: #d3d3d3;
+            width: 100%;
+            padding: 1em;
+            
+         }   
         .movie-tile:hover {
             background-color: #EEE;
             cursor: pointer;
         }
+        /*on hover make comment appear at top of movie image*/
+        .movie-tile:hover .comment{
+            position: absolute;
+            top: 0;
+            display: block;
+            margin-bottom: 0.25em;
+            margin-left: -1em;
+
+        }
+ 
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
@@ -49,6 +68,7 @@
             top: 0;
             background-color: white;
         }
+ 
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -103,36 +123,43 @@
     <div class="container">
       
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="mLDQL23nutw" data-toggle="modal" data-target="#trailer">
+    <div class="comment">The music is the best part of this.</div>
     <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/TarnationPOSTER11.jpg" width="220" height="342">
     <h2>Tarnation</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ey8Z7aqXcW0" data-toggle="modal" data-target="#trailer">
+    <div class="comment">Fantastic acting; not overly dramatic but heart-breaking.</div>
     <img src="http://ia.media-imdb.com/images/M/MV5BMTEwNjE2OTM4NDZeQTJeQWpwZ15BbWU3MDE2MTE4OTk@._V1_SX214_AL_.jpg" width="220" height="342">
     <h2>Short Term 12</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="PF_jWPJwKIE" data-toggle="modal" data-target="#trailer">
+    <div class="comment">A prequel to girls.</div>
     <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Tiny_furniture_poster.jpg" width="220" height="342">
     <h2>Tiny furniture</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="EB4PmbfG4bw" data-toggle="modal" data-target="#trailer">
+    <div class="comment">Still haven't seen the tv show.</div>
     <img src="http://filmmakeriq.com/wp-content/uploads/2013/05/Fargo-Poster.jpg" width="220" height="342">
     <h2>Fargo</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="USADM5Gk9Gs" data-toggle="modal" data-target="#trailer">
+    <div class="comment">A favorite from childhood. Can't beat the poster.</div>
     <img src="http://cstpdx.com/sites/clinton/files/images/logansrunmovieposter.jpg" width="220" height="342">
     <h2>Logan's Run</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ZeVAJre7PWU" data-toggle="modal" data-target="#trailer">
+    <div class="comment">I didn't know classic movies could make me laugh so much  - very funny and smart.</div>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/1941.lady.eve.jpg/220px-1941.lady.eve.jpg" width="220" height="342">
     <h2>The Lady Eve</h2>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Ys-mbHXyWX4" data-toggle="modal" data-target="#trailer">
+    <div class="comment">The closest thing to my childhood on film, thanks to  central Texas location,  including my old high school.</div>
     <img src="http://ecx.images-amazon.com/images/I/A1Dos9L1WHL._SL1500_.jpg" width="220" height="342">
     <h2>Boyhood</h2>
 </div>

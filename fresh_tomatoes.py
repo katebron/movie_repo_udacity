@@ -37,11 +37,30 @@ main_page_head = '''
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
+            position: relative;
         }
+        /*comment hiddent until hover*/
+        .comment{
+            display: none;
+            background-color: #d3d3d3;
+            width: 100%;
+            padding: 1em;
+            
+         }   
         .movie-tile:hover {
             background-color: #EEE;
             cursor: pointer;
         }
+        /*on hover make comment appear at top of movie image*/
+        .movie-tile:hover .comment{
+            position: absolute;
+            top: 0;
+            display: block;
+            margin-bottom: 0.25em;
+            margin-left: -1em;
+
+        }
+ 
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
@@ -55,6 +74,7 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+ 
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -121,6 +141,7 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <div class="comment">{comment}</div>
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
 </div>
@@ -142,6 +163,8 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            #add in movie comment
+            comment = movie.kates_comment,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
