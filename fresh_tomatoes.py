@@ -3,7 +3,9 @@ import os
 import re
 
 
-# Styles and scripting for the page
+''' Styles and scripting for the page, with 'comment' added to original file
+   so it can be displayed as well. Also added some extra css to display this
+   in a more readable way.'''
 main_page_head = '''
 <!DOCTYPE html>
 <html lang="en">

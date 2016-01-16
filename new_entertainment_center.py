@@ -1,7 +1,8 @@
+#import needed modules
 import fresh_tomatoes
 import media
 
-#describe new instances of movie
+#describe new instances of movie, outlining movie title, story line, image url, video url, and a comment
 tarnation = media.Movie("Tarnation", "Documentery about a person's experience"
                         " growing up with a mentally unstable mother in Texas",
                         "https://upload.wikimedia.org/wikipedia/en/9/9b/TarnationPOSTER11.jpg",
